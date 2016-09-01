@@ -67,8 +67,8 @@ int main(){
     	for(j = 0; j < key.ell; j++){if(m[j] != decm[j]){std::cerr << "Enc/Dec Error!!!\n";}}
 	}
 	cout << "* KeyGen Time : " << e1 / Test_Num << "ms" << endl;
-	cout << "* Encrypt Time : " << e2 / Test_Num << "ms" << endl;
-	cout << "* Decrypt Time : " << e3 / Test_Num << "ms" << endl;
+	cout << "* Encrypt Time : " << (int)(1000 * e2 / Test_Num) << "μs" << endl;
+	cout << "* Decrypt Time : " << (int)(1000 * e3 / Test_Num) << "μs" << endl;
 
 	return 0;
 }
