@@ -19,6 +19,7 @@ struct PKEParams {
     unsigned long lambda, ell, n, q, errorbound, theta;
 };
 
+//Parameters from security parameters 72 ~ 128//
 const struct PKEParams PKE_1 = {72, 128, 280, 565, 8, 10};
 const struct PKEParams PKE_2 = {93, 128, 350, 745, 4, 15};
 const struct PKEParams PKE_3 = {107, 128, 400, 901, 8, 16};
